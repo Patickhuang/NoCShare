@@ -25,6 +25,10 @@
 - (void) updateContentWithPeopleProxies:(NSArray*)arg1 shareProxies:(NSArray*)arg2 actionProxies:(NSArray*)arg3 activitiesByUUID:(NSMutableDictionary*)arg4 nearbyCountSlotID:(id)arg5 animated:(BOOL)arg6 reloadData:(BOOL)arg7 {
 	%orig([NSMutableArray new], arg2, arg3, arg4, arg5, arg6, arg7);
 }
+
+-(void)_updateContentWithPeopleProxies:(id)arg1 shareProxies:(id)arg2 actionProxies:(id)arg3 activitiesByUUID:(id)arg4 nearbyCountSlotID:(id)arg5 animated:(BOOL)arg6 reloadData:(BOOL)arg7 {
+	%orig([NSMutableArray new], arg2, arg3, arg4, arg5, arg6, arg7);
+}
 %end
 
 %hook _UIActivityUserDefaultsViewController
